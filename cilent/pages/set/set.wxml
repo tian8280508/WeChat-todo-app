@@ -1,0 +1,23 @@
+<view class="bor">
+  <view class="title">设置</view>
+  <view class="section">
+    <text class='text'>允许全选：</text>
+    <switch checked="{{ p_isAllowSelected }}" size='30rpx' color='#6699CC' bindchange="allSelected"/>
+  </view>
+  <view class="section">
+    <text class='text'>允许清空所有已完成：</text>
+    <switch checked="{{ p_isAllowClearFinished}}" color='#6699CC' bindchange="clearFinished"/>
+  </view>
+  <view class="section">
+    <text class='text'>允许清除过期任务</text>
+    <switch checked="{{ p_isAllowClearOutFinished }}" color='#6699CC' bindchange="clearOutFinished"/>
+  </view>
+  <view class="section">
+    <text class='text'>允许自动完成已过期任务</text>
+    <switch checked="{{ p_isAutoFinished }}" color='#6699CC' bindchange="autoFinished"/>
+  </view>
+  <view class='down'>
+    <button catchtap='clearHistory' class='downbutton'>清除历史记录</button>
+  </view>
+</view>
+

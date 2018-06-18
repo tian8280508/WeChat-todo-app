@@ -1,0 +1,21 @@
+<view class='homecontainer'>
+  <view class='homecard' wx:if="{{matters.length}}">
+    <view class='homematters'>
+      <item wx:for="{{ matters }}" wx:key="id" binditemremove="onItemRemove" binditemmodify="onItemModify" bindsharepage="goSharePage" binditemfinished='onItemFinished' title="{{ item.title }}" time='{{ item.time}}' date='{{item.date}}' detail='{{item.detail}}' category='{{item.category}}' address='{{item.address}}' importance='{{item.importanceLevel}}' finished="{{ item.finished }}" imagePath="{{item.imagePath}}" data-index="{{ index }}"></item>
+    </view>
+    <view class="footer">
+      <text class="footerleft" bindtap="clearOutdatedFinished">清空过期任务</text>
+      <text class="footerleft" bindtap="clearFinished">清空已完成任务</text>
+      <text  class="footerright" bindtap="allFiSt" >全部完成/重启</text>  
+    </view>
+
+  </view>
+  <view  wx:else>
+    <view class='homefooter'>
+      <text class='homefinish'>暂无待办事项</text>
+    </view>
+     <view>
+  </view>
+  </view>
+  <button catchtap='onClickBtn' class='circle-float'>+</button>
+</view>

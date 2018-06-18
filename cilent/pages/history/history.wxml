@@ -1,0 +1,30 @@
+<!-- <canvas canvas-id="cateCanvas" class="canvas" style="height:400px"   ></canvas>
+<!-- <canvas canvas-id="columnCanvas" class="canvas" style="height:400px" ></canvas> -->
+
+<view class='out'>
+
+
+  <view class='midcanvans' wx:if='{{isPieChart}}'>
+    <canvas canvas-id="cateCanvas" class="canvas" style="height:600rpx; width:800rpx"></canvas>
+  </view>
+  <view class='midcanvans' wx:if='{{!isPieChart}}'>
+    <canvas canvas-id="columnCanvas" class="canvascolumn" style="height:400rpx; width:800rpx"></canvas>
+  </view>
+  <view class='top' wx:if='{{historys.length}}'>
+    <view class="topleft" catchtap="showDayChangeLeft">
+      <view class="toplefttext" >《</view>
+    </view>
+    <view class="topmid">{{showDays[sdIndex]}}</view>
+    <view class="topright" catchtap="showDayChangeRight">
+      <view class="toprighttext" >》</view>
+    </view>
+  </view>
+  <view class='topctemp' wx:else> 暂无历史记录 </view>
+
+  <view class='down'>
+    <item wx:for="{{ historys }}" wx:key="id" title="{{ item.matter[0].title }}" finishDate='{{item.finishDateStr}}' beginDate='{{item.matter[0].date}}' detail='{{item.mattter[0].detail}}' category='{{item.mattter[0].category}}' address='{{item.mattter[0].address}}' binditemremove='itemDelete' importance='{{item.matter[0].importanceLevel}}' imagePath="{{item.matter[0].imagePath}}" data-index="{{ index }}">
+    </item>
+  </view>
+  <image class='topimgr' catchtap='onClickChange' wx:if='{{isPieChart}}' src="/icons/bar-chart.png"></image>
+  <image class='topimgr' catchtap='onClickChange' wx:else src="/icons/pieChart.png"></image>
+</view>

@@ -1,0 +1,29 @@
+<view class='card'>
+  <view class='cardup'>
+    <view class='cardupleft'>
+      <text class='carduptext'>创建：{{beginDate}} |  完成：{{finishDate}}</text>
+    </view>
+  </view>
+  <view class="card_upper">
+    <view class="card_middle">
+      <view class='cardtextleft'>
+        <text class="cardtext">主题：{{title}}</text>
+      </view>
+      <view class="cardtextmid" wx:if="{{importance == '!'}}">
+        <text  class="cardtext1">{{importance}}</text>
+      </view>
+      <view class="cardtextmid"  wx:if="{{importance == '!!'}}" >
+        <text class="cardtext2">{{importance}}</text>
+      </view>
+      <view class="cardtextmid" wx:if="{{importance == '!!!'}}" >
+        <text class="cardtext3">{{importance}}</text>
+      </view>
+      <view class="cardtextmid" wx:if="{{importance == '!!!!'}}">
+        <text  class="cardtext4">{{importance}}</text>
+      </view>
+      <view class="cardtextright"> 
+          <image class='carddelete' catchtap='onItemRemove' src="/icons/delete.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

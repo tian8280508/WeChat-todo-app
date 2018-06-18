@@ -1,0 +1,68 @@
+<!--pages/detail/detail.wxml-->
+
+<view class="background">
+
+  <view class="Out">
+    <view class="MainViewCategory1" >
+      <text class='OptionText'> 标题</text>
+      <input value='{{title}}' class='OptionInputText' bindinput='inputTitle' auto-focus></input>
+    </view>
+
+    <view class="MainViewCategory">
+      <text class='OptionText'>具体内容</text>
+      <textarea value='{{detail}}'  class="TextEditStyle" bindinput='inputDetail' auto-focus />
+    </view>
+ 
+ 
+    <view class="Option">
+      <text class="OptionText">开始日期</text>
+      <picker mode="date" class="pickerStyle" bind start="2010-01-01" end="2030-12-31" bindchange="setDate">
+        <text class="OptionDefaultText">{{date}}</text>
+      </picker>
+    </view>
+
+    <view class="Option">
+      <text class="OptionText">开始时间 </text>
+      <picker mode="time" class="pickerStyle" value="{{time}}" start="00:00" end="24:00" bindchange="setTime">
+        <text class="OptionDefaultText">{{time}}</text>
+      </picker>
+    </view>
+
+
+    <view class="Option">
+      <text class="OptionText">重要程度</text>
+      <picker mode="selector" class="pickerStyle" range="{{importanceArray}}" value="imindex" bindchange="setEmergency">
+        <text class="OptionDefaultText">{{importanceArray[imindex]}}</text>
+      </picker>
+    </view>
+
+
+    <view class="Option">
+      <text class="OptionText">日程分类</text>
+      <picker mode="selector" class="pickerStyle" range="{{varietyArray}}" value="vaindex" bindchange="setCategory">
+        <text class='OptionDefaultText'>{{varietyArray[vaindex]}}</text>
+      </picker>
+    </view>
+
+    <view class="Option">
+      <text class='OptionText'>添加地点</text>
+      <input class="OptionInputText" placeholder='点击右边按钮自动获取位置' value='{{address}}'   />
+      <image  class='AddPicturege' src="/icons/Location.png" bindtap="setAddress" ></image>
+    </view>
+
+
+    <view class="Option">
+      <text class='OptionText'>添加图片</text>
+      <image class="AddPicture" bindtap="setImage" wx-if="{{!hasImg}}" src="/icons/AddPicture.png" class="AddPicture"></image>
+    </view>
+
+    <view wx:if="{{hasImg}}" class="image_box">
+      <view class="picimg">
+        <image src="{{imagePath}}" class='picPre'></image>
+        <image bindtap="clearImage" src="/icons/close.png" class='picclose'></image>
+      </view>
+    </view>
+ </view>
+  <button class="AddButton" hover-class="ButtonClick" bindtap="btn_modify" hover-start-time="200" >修改日程</button>
+
+</view>

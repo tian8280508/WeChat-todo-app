@@ -1,0 +1,34 @@
+<view class='card' bindtap='onTouchItem'>
+  <view class='cardup'>
+    <view class='cardupleft'>
+      <text class='carduptext'>时间：{{time}} |  日期：{{date}}</text>
+    </view>
+    
+  </view>
+  <view class="card_upper">
+    <view class="card_middle">
+      <text class="cardtext">主题：{{title}}</text>
+      <text class="cardtext">分类：{{category}}</text>
+      <view class="cardtext" wx:if="{{importance == '!'}}">
+        <text class="cardtext">重要程度：</text>
+        <text  class="cardtext1">{{importance}}</text>
+      </view>
+      <view class="cardtext"  wx:if="{{importance == '!!'}}" >
+        <text class="cardtext">重要程度：</text>
+        <text class="cardtext2">{{importance}}</text>
+      </view>
+      <view class="cardtext" wx:if="{{importance == '!!!'}}" >
+        <text class="cardtext">重要程度：</text>
+        <text class="cardtext3">{{importance}}</text>
+      </view>
+      <view class="cardtext" wx:if="{{importance == '!!!!'}}">
+        <text class="cardtext">重要程度：</text>
+        <text  class="cardtext4">{{importance}}</text>
+      </view>
+    </view>
+    <view class='card_right'>
+      <icon class='card_fished' color='#6699CC'size="25" type="{{ finished ? 'success' : 'circle' }}" > </icon>
+    </view>
+  </view>
+  
+</view>

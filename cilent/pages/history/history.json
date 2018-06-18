@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "归档管理",
+  "usingComponents": {
+    "item": "/components/item_3/item_3"
+  },
+  "enablePullDownRefresh": true
+}

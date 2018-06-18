@@ -1,0 +1,40 @@
+/* pages/homepage/homepage.wxss */
+.homecontainer{
+  margin: 10rpx;
+}
+.homecard{
+  width: 100%; 
+  display: column;
+}
+.homematters{
+  width: 100%; 
+}
+.homefooter{
+ margin-top: 40vh;
+ margin-left: 35%;
+}
+.circle-float{
+  color: #ffffff;  
+  position: fixed;  
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+  bottom: 20rpx;  
+  right: 20rpx;  
+  width: 120rpx;  
+  height: 120rpx;  
+  border-radius: 50%;  
+  font-size: 70rpx;  
+  background: #6699CC;  
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 30rpx 0;
+  padding: 0 10rpx;
+  font-size: 32rpx;
+  color: #9B9B9B;
+}
+.footerleft{
+
+}

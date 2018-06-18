@@ -1,0 +1,224 @@
+/* pages/detail/detail.wxss */
+.Out/*最外层边框*/
+{
+    background-color: white;
+
+    padding-left: 10rpx;
+    padding-right: 10rpx;
+    padding-bottom: 30rpx;
+    padding-top: 10rpx;
+}
+
+.Option/* 输入框 */
+{
+  line-height: 80rpx;
+  font-size: 12pt;
+  height: 80rpx;
+  border-bottom: 5rpx solid silver;/* balck */
+
+  display:flex;
+  flex-direction:row;
+  margin-top: 5rpx;
+  margin-bottom: 5rpx;
+}
+.OptionText/* 输入框Text */
+{
+  color: rgb(110, 110, 110);/* balck */
+
+  font-weight: 580; 
+}
+.OptionInputText/* 输入框Input */
+{
+ 
+  color: rgb(110, 110, 110); 
+  font-weight: 580; 
+
+  margin-top: 15rpx;
+  margin-left: 10rpx;
+}
+.OptionDefaultText/* 输入框默认文字 */
+{
+
+  color: rgb(110, 110, 110); 
+  font-weight: 580; 
+
+  margin-left: 10rpx;
+}
+.Location
+{
+  width: 40rpx;
+  height: 40rpx;
+  
+  margin-top: 20rpx;
+  margin-left: 170rpx;
+  margin-right: 10rpx;
+  
+}
+
+.pickerStyle
+{
+  font-size: 12pt;
+  color: rgb(110, 110, 110); 
+}
+
+.AddPicture/*添加照片按钮样式*/
+{
+  height: 60rpx;
+  width: 60rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  margin-left: 510rpx;
+}
+
+.AddButton/*添加日程按钮样式*/
+{
+     margin-top: 20px;
+    text-align: center; 
+    background-color: #FACA16; 
+    color:white; 
+    border-radius: 20px;  
+    font-size: 16px;
+    font-weight:600;
+    width:50%;  
+}
+
+
+
+.Out/*最外层边框*/
+{
+    background-color: white;
+    margin-left:10rpx;
+    margin-right: 10rpx;
+    margin-bottom: 10rpx; 
+    border: 2rpx solid #DDD;
+    border-radius: 15rpx;
+    padding-left: 10rpx;
+    padding-right: 10rpx;
+    padding-bottom: 30rpx;
+    padding-top: 10rpx;
+}
+.Option/* 输入框 */
+{
+  line-height: 80rpx;
+  font-size: 12pt;
+  height: 80rpx;
+  border-bottom: 5rpx solid silver;/* balck */
+
+  display:flex;
+  flex-direction:row;
+  margin-top: 5rpx;
+  margin-bottom: 5rpx;
+}
+.OptionText/* 输入框Text */
+{
+  color: rgb(110, 110, 110);/* balck */
+  width: 25%;
+  font-weight: 580; 
+}
+.OptionInputText/* 输入框Input */
+{
+  color: rgb(110, 110, 110); 
+  font-weight: 580; 
+  margin-top: 15rpx;
+  width: 470rpx;
+}
+.OptionDefaultText/* 输入框默认文字 */
+{
+
+  color: rgb(110, 110, 110); 
+  font-weight: 580; 
+
+  margin-left: 10rpx;
+}
+.Location
+{
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 10rpx;
+}
+
+.pickerStyle
+{
+  font-size: 12pt;
+  color: rgb(110, 110, 110); 
+  width: 75%;
+}
+
+.AddPicture/*添加照片按钮样式*/
+{
+  height: 60rpx;
+  width: 60rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  margin-left: 470rpx;
+}
+.AddPicturege
+{
+  height: 60rpx;
+  width: 60rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+
+
+.AddButton/*添加日程按钮样式*/
+{
+     margin-top: 0px;
+    text-align: center; 
+    background-color: #6699CC; 
+    color:white; 
+    border-radius: 20px;  
+    font-size: 16px;
+    font-weight:600;
+    width:80%;  
+}
+
+.page
+{
+  background-color: #EFEFF4;
+}
+
+.MainViewCategory1{
+ border-bottom: 5rpx solid silver;/* balck */
+  margin-bottom:10rpx;
+}
+.MainViewtext{
+  font-size: 12pt; 
+  color: rgb(110, 110, 110); 
+  text-align: justify; 
+  line-height: 1.7em; 
+  margin-left:100rpx;
+   display:flex;
+  flex-direction:column;
+}
+.TextEditStyle
+{
+  width:100%;/*自动适应父布局宽度*/ 
+  background: #f8f8ff;
+  margin-top: 20rpx;
+  font-size: 13pt; 
+  color: rgb(110, 110, 110);
+  height: 300rpx;
+}
+.picture{
+  
+}
+.LocationText{
+ 
+}
+.picPre{
+  height: 450rpx;
+  width: 500rpx;
+  margin-left: 70rpx
+}
+.picimg{
+  margin-top: 20rpx;
+  display:flex;
+  flex-direction:row;
+}
+.picclose{
+  height: 50rpx;
+  width: 50rpx;
+  margin-left: 20rpx
+}

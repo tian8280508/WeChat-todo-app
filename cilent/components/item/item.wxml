@@ -1,0 +1,61 @@
+<view class='card' >
+  <view class='cardup'>
+    <view class='cardupleft'>
+      <text class='carduptext'>时间：{{time}} |  日期：{{date}}</text>
+    </view>
+    <view wx:if="{{iconCol || infoCol}}" catchtap='onTouchDownArrow' class='cardupright'>
+      <image class='upimg' src="/icons/more_unfold-1.png"></image>
+    </view>
+    <view wx:else catchtap='onTouchUpArrow' class='cardupright'>
+      <image class='upimg' src="/icons/less.png"></image>
+    </view>
+  </view>
+  <view class="card_upper" bindtap='onTouchItem'>
+    <view class="card_middle">
+      <text class="cardtext">主题：{{title}}</text>
+      <text class="cardtext">分类：{{category}}</text>
+      <view class="cardtext" wx:if="{{importance == '!'}}">
+        <text class="cardtext">重要程度：</text>
+        <text  class="cardtext1">{{importance}}</text>
+      </view>
+      <view class="cardtext"  wx:if="{{importance == '!!'}}" >
+        <text class="cardtext">重要程度：</text>
+        <text class="cardtext2">{{importance}}</text>
+      </view>
+      <view class="cardtext" wx:if="{{importance == '!!!'}}" >
+        <text class="cardtext">重要程度：</text>
+        <text class="cardtext3">{{importance}}</text>
+      </view>
+      <view class="cardtext" wx:if="{{importance == '!!!!'}}">
+        <text class="cardtext">重要程度：</text>
+        <text  class="cardtext4">{{importance}}</text>
+      </view>
+    </view>
+    <view class='card_right'>
+      <icon class='card_fished' color='#6699CC' catchtap='cardFinished' size="25" type="{{ finished ? 'success' : 'circle' }}" > </icon>
+    </view>
+  </view>
+  <view class='card_imformation' wx:if ='{{!infoCol}}' >
+      <text class="imformationtext">详细信息：{{detail}}</text>
+      <text class="cardtext">地点：{{address}}</text>
+      <text class="cardtext">图片：</text>
+      <image class='addimg' src='{{imagePath}}' wx-if='{{imagePath}}' ></image>
+  </view>
+  <view class='card_lower' wx:if ='{{!iconCol && true}}'>
+    <view catchtap='moreInfo' class='card_lowerimg'>
+        <image class='img'  src='/icons/more_icon.png'></image>
+    </view>
+    <view catchtap='modifyMatter' class='card_lowerimg'>
+     <image class='img'  src='/icons/edit.png'></image>
+    </view>
+    <view  catchtap='removeMatter' class='card_lowerimg'>
+     <image class='img'  src='/icons/delete.png'></image>
+    </view>
+    <view class='card_lowerimg' catchtap='shareMatter'  wx:if='{{isShared}}'>
+      <image  class='img' catchtap='shareMatter' src='/icons/skip-2.png'></image>
+    </view>
+    <view class='card_lowerimg' catchtap='shareMatter'  wx:else>
+      <image  class='img' catchtap='shareMatter' src='/icons/skip.png'></image>
+    </view>
+  </view>
+</view>

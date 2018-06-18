@@ -1,0 +1,82 @@
+<view class="background">
+  <view class="Out">
+    <view class="MainViewCategory1" >
+      <text class='OptionText'> 标题</text>
+      <input value='{{title}}' disabled='true' class='OptionInputText' bindinput='inputTitle' auto-focus></input>
+    </view>
+
+    <view class="MainViewCategory">
+      <text class='OptionText'>具体内容</text>
+      <textarea value='{{detail}}' disabled='true' class="TextEditStyle" bindinput='inputDetail' auto-focus />
+    </view>
+ 
+ 
+    <view class="Option">
+      <text class="OptionText">开始日期</text>
+      <picker disabled='true' mode="date" class="pickerStyle" bind start="2010-01-01" end="2030-12-31" bindchange="setDate">
+        <text class="OptionDefaultText">{{date}}</text>
+      </picker>
+    </view>
+
+    <view class="Option">
+      <text class="OptionText">开始时间 </text>
+      <picker disabled='true' mode="time" class="pickerStyle" value="{{time}}" start="00:00" end="24:00" bindchange="setTime">
+        <text class="OptionDefaultText">{{time}}</text>
+      </picker>
+    </view>
+
+
+    <view class="Option">
+      <text class="OptionText">重要程度</text>
+      <picker disabled='true' mode="selector" class="pickerStyle" range="{{importanceArray}}" value="imindex" bindchange="setEmergency">
+        <text class="OptionDefaultText">{{importanceArray[imindex]}}</text>
+      </picker>
+    </view>
+
+
+    <view class="Option">
+      <text class="OptionText">日程分类</text>
+      <picker disabled='true' mode="selector" class="pickerStyle" range="{{varietyArray}}" value="vaindex" bindchange="setCategory">
+        <text class='OptionDefaultText'>{{varietyArray[vaindex]}}</text>
+      </picker>
+    </view>
+
+    <view class="Option">
+      <text class='OptionText'>地点</text>
+      <input disabled='true' class="OptionInputText" placeholder='' value='{{address}}'   />
+      <image  class='AddPicturege' src="/icons/Location.png" bindtap="setAddress" ></image>
+    </view>
+
+    <!--...以后可能加上  多少人参与该日程
+    <view class="Option">
+      <text class='OptionText'>添加图片</text>
+      <image class="AddPicture" wx-if="{{!hasImg}}" src="/icons/AddPicture.png" class="AddPicture"></image>
+    </view>
+
+    <view wx:if="{{hasImg}}" class="image_box">
+      <view class="picimg">
+        <image src="{{imgPath}}" class='picPre'></image>
+      </view>
+    </view>
+     -->
+     <!--...以后可能加上  多少人参与该日程
+    <view class='user'>
+      <view class="userPicture" wx:key='id' wx:for="{{itemList}}">
+        <image class="userimg" src="{{item.userPic}}">
+        </image>
+      </view>
+      <view class="userCount">
+        <text class='OptionText'>{{itemList.length}}人参与了该日程</text>
+      </view>
+    </view>
+     -->
+ </view>
+ <view class='addbutton' wx:if="{{!isHost}}">
+    <button catchtap='addToMine' class="AddButton">添加到我的日程</button>
+  </view>
+  <view class='addbutton' wx:else>
+    <button class="AddButtonleft" catchtap='cancelShare'>取消分享</button>
+    <button class="AddButtonright" open-type='share' >分享给他人</button>
+  </view>
+
+</view>

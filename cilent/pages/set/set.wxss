@@ -1,0 +1,40 @@
+.bor{
+ margin: 20rpx;
+}
+.title{
+margin-bottom: 30rpx;
+font-size: 45rpx;
+}
+.section{
+  margin-top:30rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #DDD;
+  padding-bottom: 20rpx;
+}
+.wx-switch-input{
+  width:103rpx !important;height:60rpx !important;
+}
+.wx-switch-input::before{
+  width:100rpx !important;height: 60rpx !important;
+}
+.wx-switch-input::after{
+  width: 58rpx !important;height: 58rpx !important;
+}
+.text{
+  margin-right: 30rpx;
+  width: 80%;
+}
+.sectionimg{
+  width: 70rpx;
+  height: 70rpx;
+  margin-left: 10rpx;
+}
+.down{
+  width: 100%;
+  margin-top: 30rpx;
+}
+.downbutton{
+  background-color: #6699CC;
+  color: white;
+}

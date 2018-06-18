@@ -1,0 +1,56 @@
+.bor{
+  margin: 10rpx;
+}
+.title{
+  margin-bottom: 60rpx;
+}
+.text{
+  width: 100%;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:5;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  border-bottom: 2rpx solid #DDD;
+}
+.text1{
+ width: 30%; 
+}
+.text2{
+   width: 70%;
+   text-align:right; 
+}
+.section{
+  margin-bottom: 20prx;
+  margin-top: 40rpx;
+  border-bottom: 2rpx solid #DDD;
+  display: flex;
+  flex-direction: row;
+}
+
+.text3{
+   width: 60%; 
+}
+.text4{
+  width: 40%;
+   text-align:right; 
+    border: 2rpx solid #DDD;
+}
+.text5{
+   margin-left: 0rpx;
+}
+.text6{
+   margin-left:  200rpx;
+}
+.section1{
+  margin-bottom: 20prx;
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10rpx;
+  width: 100%;
+}
+.textbug{
+color: #B8B8B8;
+}

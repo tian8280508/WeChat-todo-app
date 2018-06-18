@@ -1,0 +1,205 @@
+.Out/*最外层边框*/
+{
+    background-color: white;
+    margin-left:10rpx;
+    margin-right: 10rpx;
+    margin-bottom: 10rpx; 
+    border: 2rpx solid #DDD;
+    border-radius: 15rpx;
+    padding-left: 10rpx;
+    padding-right: 10rpx;
+    padding-bottom: 30rpx;
+    padding-top: 10rpx;
+}
+.Option/* 输入框 */
+{
+  line-height: 80rpx;
+  font-size: 12pt;
+  height: 80rpx;
+  border-bottom: 5rpx solid silver;/* balck */
+
+  display:flex;
+  flex-direction:row;
+  margin-top: 5rpx;
+  margin-bottom: 5rpx;
+}
+.OptionText/* 输入框Text */
+{
+  color: rgb(110, 110, 110);/* balck */
+  width: 25%;
+  font-weight: 580; 
+}
+.OptionInputText/* 输入框Input */
+{
+  color: rgb(110, 110, 110); 
+  font-weight: 580; 
+  margin-top: 15rpx;
+  width: 470rpx;
+}
+.OptionDefaultText/* 输入框默认文字 */
+{
+
+  color: rgb(110, 110, 110); 
+  font-weight: 580; 
+
+  margin-left: 10rpx;
+}
+.Location
+{
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 10rpx;
+}
+
+.pickerStyle
+{
+  font-size: 12pt;
+  color: rgb(110, 110, 110); 
+  width: 75%;
+}
+
+.AddPicture/*添加照片按钮样式*/
+{
+  height: 60rpx;
+  width: 60rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  margin-left: 470rpx;
+}
+.page
+{
+  background-color: #EFEFF4;
+}
+
+.MainViewCategory1{
+ border-bottom: 5rpx solid silver;/* balck */
+  margin-bottom:10rpx;
+}
+.MainViewtext{
+  font-size: 12pt; 
+  color: rgb(110, 110, 110); 
+  text-align: justify; 
+  line-height: 1.7em; 
+  margin-left:100rpx;
+   display:flex;
+  flex-direction:column;
+}
+.TextEditStyle
+{
+  width:100%;/*自动适应父布局宽度*/ 
+  background: #f8f8ff;
+  margin-top: 20rpx;
+  font-size: 13pt; 
+  color: rgb(110, 110, 110);
+  height: 200rpx;
+}
+.picture{
+  
+}
+.LocationText{
+ 
+}
+.picPre{
+  height: 450rpx;
+  width: 500rpx;
+  margin-left: 70rpx
+}
+.picimg{
+  margin-top: 20rpx;
+  display:flex;
+  flex-direction:row;
+}
+.picclose{
+  height: 50rpx;
+  width: 50rpx;
+  margin-left: 20rpx
+}
+.user{
+  margin-top:30rpx; 
+}
+.userPicture
+{ 
+  margin-left: 10rpx;
+  margin-bottom: 10rpx;
+  vertical-align: middle;
+  height: 50rpx;
+  width: 50rpx;
+}
+.userCount
+{
+  font-size:10pt;
+  vertical-align: middle;
+  line-height:50rpx;
+  margin-left: 10rpx;
+}
+.userimg{
+  border:1px solid #cccccc;
+  height:50rpx;
+  width:50rpx;
+  border-radius:50rpx;
+}
+
+.AddPicturege
+{
+  height: 60rpx;
+  width: 60rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.addbutton{
+  margin-top: 20rpx;
+  display:flex;
+  flex-direction:row;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+.AddButtonleft{
+   margin-top: 0px;
+    text-align: center; 
+    background-color: #6699CC; 
+    color:white; 
+    border-bottom-left-radius: 60rpx; 
+    border-top-left-radius: 60rpx; 
+    border-bottom-right-radius: 0rpx; 
+    border-top-right-radius: 0rpx; 
+    font-size: 16px;
+    font-weight:600;
+    width:380rpx; 
+}
+.AddButtonright/*添加日程按钮样式*/
+{
+     margin-top: 0px;
+    text-align: center; 
+    background-color: #6699CC; 
+    color:white; 
+    border-bottom-left-radius: 0rpx; 
+    border-top-left-radius: 0rpx; 
+    border-bottom-right-radius: 60rpx; 
+    border-top-right-radius: 60rpx; 
+    font-size: 16px;
+    font-weight:600;
+    width:380rpx;  
+}
+.AddButton/*添加日程按钮样式*/
+{
+     margin-top: 0px;
+    text-align: center; 
+    background-color: #6699CC; 
+    color:white; 
+    border-radius: 20px;  
+    font-size: 16px;
+    font-weight:600;
+    width:80%;  
+}
+.sharetext{
+  position: fixed;  
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+  top: 0px;  
+  right: 78rpx;  
+  width: 300rpx;  
+  font-size: 30rpx;  
+  color: #888888;
+}

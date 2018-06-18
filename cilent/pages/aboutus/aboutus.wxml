@@ -1,0 +1,24 @@
+<!--logs.wxml-->
+<view class="bor">
+  <view class="title">项目信息
+  </view>
+  <view class='section'>
+   <text class='text1'>项目版本</text>
+   <text class='text2'>v1.1</text>
+  </view>
+   <view class='section'>
+   <text class='text1'>项目团队</text>
+   <text class='text2'>假装我们很强队</text>
+  </view>
+   <view class='section'>
+   <text class='text1'>联系方式</text>
+   <text class='text2'>751531219@qq.com</text>
+  </view>
+  <view class="section1">
+    <text class='textbug'>如果出现了bug</text>
+     <text class='textbug'>请发邮件到751531219@qq.com</text>
+      <text class='textbug'>感谢您的使用与支持</text>
+  </view>
+
+</view>
+
